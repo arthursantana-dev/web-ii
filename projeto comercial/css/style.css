@@ -6,11 +6,6 @@
 	--bg: #051D40;
 	--text: white;
 }
-
-* {
-	color: var(--text) !important;
-}
-
 body {
 	background-color: #050e40;
 	height: 200vh;
@@ -27,6 +22,23 @@ nav.navbar {
 	-webkit-box-shadow: -4px 10px 39px -5px rgba(0,0,0,0.23);
 	-moz-box-shadow: -4px 10px 39px -5px rgba(0,0,0,0.23);
 	box-shadow: -4px 10px 39px -5px rgba(0,0,0,0.23);
+	color: white;
+}
+
+.nav-link, .nav-link.active {
+	color: white !important;
+}
+
+a.navbar-brand {
+	color: white;
+}
+
+h1#title {
+	color: black;
+
+}
+tr img {
+	width: 27rem;
 }
 
 button.navbar-toggler {
@@ -35,7 +47,7 @@ button.navbar-toggler {
 }
 
 img.nav__logo {
-	width: 6rem;
+	width: 7rem;
 	border-radius: 100%;
 }
 

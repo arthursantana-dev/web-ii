@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+
+	<script>
+
+
+		var ua = navigator.userAgent.toLowerCase()
+		var uMobile = ''
+		// === REDIRECIONAMENTO PARA iPhone, Windows Phone, Android, etc. ===
+		// Lista de substrings a procurar para ser identificado como mobile WAP
+		uMobile = ''
+		uMobile += 'iphone;ipod;windows phone;android;iemobile 8'
+		// Sapara os itens individualmente em um array
+		v_uMobile = uMobile.split(';')
+		// percorre todos os itens verificando se eh mobile
+		var boolMovel = false
+		for (i=0;i<=v_uMobile.length;i++){
+			if (ua.indexOf(v_uMobile[i]) != -1){
+				boolMovel = true
+			}
+		}
+		if (boolMovel == true){
+			location.href='./indexmobile.html'
+		} 
+
+
+	</script>
+
     <link
       rel="stylesheet"
       href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
@@ -18,7 +44,7 @@
       <div class="container-fluid">
         <div class="logo">
 			<img src="./img/Logo-Prog. webII/1.png" alt="" class="nav__logo">
-			<a class="navbar-brand" href="#">Infotec</a>
+			<a class="navbar-brand" href="#">Infotec (Versão Desktop)</a>
 		</div>
         <button
           class="navbar-toggler"
@@ -89,8 +115,20 @@
 
 		<hr>
 
+		<table border="2">
+			<tbody>
+				<tr>
+					<td><img src="./img-desfocada/1.jpg" alt=""></td>
+					<td><img src="./img-desfocada/2.jpg" alt=""></td>
+					<td><img src="./img-desfocada/3.jpg" alt=""></td>
+				
+				</tr>
+
+			</tbody>
+		</table>
+
 		<article>
-			<h1>Infotec</h1>
+			<h1 id="title">Infotec</h1>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quae magni est saepe sapiente. Natus beatae, laborum minus debitis pariatur architecto ullam cum id, eaque, aut aliquid mollitia doloremque eos!
 			Velit, modi ullam eveniet rem tempora, dolore incidunt eius animi harum quibusdam optio non quisquam explicabo cumque accusamus quas unde a odio recusandae molestias! Corporis quisquam dolorum a cumque possimus.
 			Quibusdam aliquid, non earum ipsum itaque odit perferendis dolore deserunt quae velit expedita tempora unde dolores recusandae optio esse impedit hic nostrum delectus sequi harum consequuntur, cum eaque. Labore, expedita?
