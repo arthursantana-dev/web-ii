@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+	--main: gray;
+	--secondary: darkgray;
+	--bg: #051D40;
+	--text: white;
+}
+body {
+	background-color: #050e40;
+	height: 200vh;
+}
+article {
+	margin-block: 1rem;
+}
+
+nav.navbar {
+	background-color: var(--bg) !important;
+	position: sticky;
+	top: 0.1px;
+	z-index: 4;
+	-webkit-box-shadow: -4px 10px 39px -5px rgba(0,0,0,0.23);
+	-moz-box-shadow: -4px 10px 39px -5px rgba(0,0,0,0.23);
+	box-shadow: -4px 10px 39px -5px rgba(0,0,0,0.23);
+	color: white;
+}
+
+.nav-link, .nav-link.active {
+	color: white !important;
+}
+
+a.navbar-brand {
+	color: white;
+}
+
+h1#title {
+	color: black;
+
+}
+tr img {
+	width: 27rem;
+}
+
+button.navbar-toggler {
+	border: var(--text);
+	filter: invert(1);
+}
+
+img.nav__logo {
+	width: 7rem;
+	border-radius: 100%;
+}
+
+section.container > * {
+	color: black !important;
+}
+
+section.container {
+	background-color: rgb(230, 230, 230);
+	padding-block: 2rem;
+	border-radius: 0.75rem;
+}
+
+section.products-flex__wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 1rem;
+}
+
+div.card {
+	width: 15rem;
+	height: 19rem;
+	background-color: var(--secondary);
+}
+
+div.card__wrapper {
+	width: fit-content;
+}
+
+a.btn-primary {
+	background-color: #051D40;
+	border: none;
+}
+
+div.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
