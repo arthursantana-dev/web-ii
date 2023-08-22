@@ -1,12 +1,12 @@
 <?php
 
-include "conectar_sql.inc";
+include "conectar_sql.php";
 
 $nome = $_POST['i-nome'];
 $email = $_POST['i-email'];
 $cidade = $_POST['i-cidade'];
 $estado = $_POST['i-estado'];
-$comentario = $_POST['i-opiniao'];
+$comentario = $_POST['t-opiniao'];
 
 $sql = "INSERT INTO cadastro VALUES";
 $sql .= "('$nome', '$email', '$cidade', '$estado', '$comentario')";
